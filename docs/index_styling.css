@@ -7,8 +7,17 @@ button{
 }
 .guziki {
     display: flex;              /* ułatwia układanie i centrowanie elementów w kontenerze */
-    justify-content: center;   /* wyśrodkowanie w poziomie */
-    align-items: center;       /* wyśrodkowanie w pionie */
-    height: 100%;
-    gap: 10px;                 /* odstęp między guzikami */
+    flex-direction: column;     /* góra -> dół  sprawia że kontenery ustawiają się w kolumnie*/
+    justify-content: center;    /* wyśrodkowanie w poziomie */
+    align-items: center;        /* wyśrodkowanie w pionie */
+    height: 100%;                 
+}
+
+.g-poz1{
+    display: flex;          /* guziki w jednej linii */
+    gap: 10px;              /* odstęp między guzikami */
+}
+
+.g-poz2{
+    margin-top: 20px;
 }
