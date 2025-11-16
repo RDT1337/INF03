@@ -5,7 +5,7 @@ button{
   border-radius: 10px;           /* danie guzikom wygładzonych krawędzi */
   background-color: lightblue;
 }
-.container {
+.guziki {
     display: flex;              /* ułatwia układanie i centrowanie elementów w kontenerze */
     justify-content: center;   /* wyśrodkowanie w poziomie */
     align-items: center;       /* wyśrodkowanie w pionie */
