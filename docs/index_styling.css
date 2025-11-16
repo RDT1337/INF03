@@ -2,7 +2,13 @@
   background-color: grey;
 }
 button{
-  border-radius: 5px;
+  border-radius: 10px;           /* danie guzikom wygładzonych krawędzi */
   background-color: lightblue;
-  text-aling: center;
+}
+.container {
+    display: flex;              /* ułatwia układanie i centrowanie elementów w kontenerze */
+    justify-content: center;   /* wyśrodkowanie w poziomie */
+    align-items: center;       /* wyśrodkowanie w pionie */
+    height: 100%;
+    gap: 10px;                 /* odstęp między guzikami */
 }
