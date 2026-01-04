@@ -12,26 +12,26 @@
 
       
         <ol>
-          <li><button>Kadrowanie obrazu</button></li>
+          <li><button onclick="document.getElementByClassName('kadrowanie').style.display = 'block'">Kadrowanie obrazu</button></li>
           <li><button>Align tekstu</button></li>
           <li><button>Grafika jako kolor tekstu</button></li>
           <li><button>Tworzenie GIF</button></li>
         </ol>
-      <section class="kadrowanie">
+      <section class="kadrowanie" style="display: none;">
         <p>1. wrzuć obrazek do gimp <br>
           2. shift+c lub crop tool <br>
           3. fixed:size i wpisujesz chciany rozmiar <br>
           4. klikasz na płótno i wybierasz gdzie chcesz ustawić okienko <br>
           5. enter i wycina ci ten kawałek</p>
       </section>
-      <section class="align">
+      <section class="align" style="display: none;">
         <p>1. wstaw tekst jaki chcesz <br>
           2. kliknij lewym na warstwę tekstu <br>
           3. kliknij Q lub szukaj sobie narzędzia do alignowania <br>
           4. masz tam pierdyliard guzików od automatycznego ustawiania <br>
           5. brawo, działa</p>
       </section>
-      <section class="kolor tekstu">
+      <section class="kolor tekstu" style="display: none;">
         <p>
           BY DODAĆ GRAFIKE JAKO KOLOR TEKSTU:<br>
 
@@ -44,7 +44,7 @@
           7.ZAPISZ DZIEŁO SZTUKI
         </p>
       </section>
-      <section class="GIF">
+      <section class="GIF" style="display: none;">
         <p>1. otworzyć wszystkie obrazki za pomocą FILE->OPEN LAYERS
           2. posortować je od dołu do góry(pierwszy na dole)
           3. dla pewności wyczyścić optymalizacje(filters->animation->unoptimize)
