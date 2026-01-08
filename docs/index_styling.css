@@ -23,7 +23,8 @@ button{
 }
 
 section{
-  width: 70%;          
+  width: 70%;
+  max-width: 70%;
   margin: 0 auto;     
   text-align: center;  
   height: 500px;
