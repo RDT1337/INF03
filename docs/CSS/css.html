@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>Dział: CSS</title>
-    <link rel="stylesheet" href="docs/index_styling.css">
+    <link rel="stylesheet" href="../index_styling.css">
   </head>
   <body>
     <header>
@@ -10,16 +10,22 @@
     <main>
       <h1>chwilowa lista tematów</h1>
       <ol> 
-        <li><button>edytowanie list</button></li>
-        <li><button>edytowanie tabel</button></li>
-        <li><button>flex i ogólne ustawianie stron</button></li>
-        <li><button>Ustawienie bloków</button></li>
-        <li><button>Dodawanie grafiki jako tło</button></li>
-        <li><button>Edytowanie znaczników</button></li>
-        <li><button>Edytowanie klas</button></li>
+        <li><button onclick="showSection('edit-list')">edytowanie list</button></li>
+        <li><button onclick="showSection('edit-table')">edytowanie tabel</button></li>
+        <li><button onclick="showSection('edit-display')">flex i ogólne ustawianie stron</button></li>
+        <li><button onclick="showSection('edit-block')">Ustawienie bloków</button></li>
+        <li><button onclick="showSection('edit-image')">Dodawanie grafiki jako tło</button></li>
+        <li><button onclick="showSection('edit-semantic')">Edytowanie znaczników</button></li>
+        <li><button onclick="showSection('edit-class')">Edytowanie klas</button></li>
         
       </ol>
-
+      <section class="edit-list" style="display:none;"></section>
+      <section class="edit-table" style="display:none;"></section>
+      <section class="edit-display" style="display:none;"></section>
+      <section class="edit-block" style="display:none;"></section>
+      <section class="edit-image" style="display:none;"></section>
+      <section class="edit-semantic" style="display:none;"></section>
+      <section class="edit-class" style="display:none;"></section>
       <script>
 function showSection(cls) {
   
