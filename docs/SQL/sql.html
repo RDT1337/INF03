@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>Dział: SQL</title>
-    <link rel="stylesheet" href="docs/index_styling.css">
+    <link rel="stylesheet" href="../index_styling.css">
   </head>
   <body>
     <header>
@@ -9,9 +9,24 @@
     </header>
     <main>
       <ul>
-        <li>łączenie wielu baz do zapytania</li>
-        <li>połączenie łańcuchowe baz</li>
+        <li><button onclick="showSection('join')">łączenie wielu baz do zapytania</button></li>
+        <li><button onclick="showSection('chain-join')">połączenie łańcuchowe baz</button></li>
+        <li><button onclick="showSection('view')">widoki</button></li>
+        <li><button onclick="showSection('update')">UPDATE</button></li>
+        <li><button onclick="showSection('alter')">ALTER</button></li>
+        <li><button onclick="showSection('grant')">uprawnienia</button></li>
+        <li><button onclick="showSection('user')">tworzenie użytkowników</button></li>
+        <li><button onclick="showSection('date')">używanie daty w zapytaniu</button></li>
       </ul>
+      <section class="join" style="display:none;"></section>
+      <section class="chain-join" style="display:none;"></section>
+      <section class="view" style="display:none;"></section>
+      <section class="update" style="display:none;"></section>
+      <section class="alter" style="display:none;"></section>
+      <section class="grant" style="display:none;"></section>
+      <section class="user" style="display:none;"></section>
+      <section class="date" style="display:none;"></section>
+      
       <script>
 function showSection(cls) {
   
