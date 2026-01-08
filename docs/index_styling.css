@@ -29,3 +29,10 @@ section{
   border: 1px solid black;
   border-radius: 20%;
 }
+section ul,
+section ol{
+  width: fit-content;     /* lista ma szerokość dopasowaną do treści */
+  margin: 0 auto;         /* wyśrodkowanie całej listy */
+  text-align: left;       /* ale tekst w środku wyrównany normalnie */
+  padding-left: 40px;
+}
