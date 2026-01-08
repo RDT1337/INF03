@@ -1,46 +1,49 @@
 <html>
   <head>
     <title>Dział: JS</title>
-    <link rel="stylesheet" href="docs/index_styling.css">
+    <link rel="stylesheet" href="../index_styling.css">
   </head>
   <body>
     <header>
       
     </header>
     <main>
-      <input type="checkbox" class="stan_boxa" id="ch1"
-      >składnia  </br>
-      <input type="checkbox" class="stan_boxa" id="ch2"
-      >tworzenie zmiennych  </br>
-      <input type="checkbox" class="stan_boxa" id="ch3"
-      >typy danych  </br>
-      <input type="checkbox" class="stan_boxa" id="ch4"
-      >instrukcje warunkowe  </br>
-      <input type="checkbox" class="stan_boxa" id="ch5"
-      >tworzenie pętli  </br>
-      <input type="checkbox" class="stan_boxa" id="ch6"
-      >tworzenie funkcji  </br>
-      <input type="checkbox" class="stan_boxa" id="ch7"
-      >obiekty i klasy </br>
-      <input type="checkbox" class="stan_boxa" id="ch8"
-      >pobieranie danych ze strony  </br>
-      <input type="checkbox" class="stan_boxa" id="ch9"
-      >walidacja danych ze strony  </br>
-      <input type="checkbox" class="stan_boxa" id="ch10"
-      >wyświetlanie błędów na stronie  </br>
-      <input type="checkbox" class="stan_boxa" id="ch11"
-      >wyświetlanie danych na stronie  </br>
-      <input type="checkbox" class="stan_boxa" id="ch12"
-      >łączenie do formularzy  </br>
-      <input type="checkbox" class="stan_boxa" id="ch13"
-      >podpinanie do guzika  </br>
-      <input type="checkbox" class="stan_boxa" id="ch14"
-      >działanie poleceń MATH  </br>
-      <input type="checkbox" class="stan_boxa" id="ch15"
-      >nauka debugowania w środowisku, narzędzia deweloperskie  </br>
-      <input type="checkbox" class="stan_boxa" id="ch16"
-      >Wyświetlanie okna do wpisania danych 
-
+      <ol>
+        <li><button onclick="showSection('syntax')">składnia</button></li>
+        <li><button onclick="showSection('variable')">tworzenie zmiennych</button></li>
+        <li><button onclick="showSection('data')">typy danych</button></li>
+        <li><button onclick="showSection('if')">instrukcje warunkowe</button></li>      
+        <li><button onclick="showSection('for')">tworzenie pętli</button></li>  
+        <li><button onclick="showSection('function')">tworzenie funkcji</button></li> 
+        <li><button onclick="showSection('object')">obiekty i klasy</button></li> 
+        <li><button onclick="showSection('getElement')">pobieranie danych ze strony</button></li> 
+        <li><button onclick="showSection('valid')">walidacja danych ze strony</button></li>
+        <li><button onclick="showSection('error')">wyświetlanie błędów na stronie</button></li>
+        <li><button onclick="showSection('innerHTML')">wyświetlanie danych na stronie</button></li>
+        <li><button onclick="showSection('form')">łączenie do formularzy</button></li>
+        <li><button onclick="showSection('button')">podpinanie do guzika</button></li>
+        <li><button onclick="showSection('math')">działanie poleceń MATH</button></li>
+        <li><button onclick="showSection('dev')">nauka debugowania w środowisku, narzędzia deweloperskie</button></li>
+        <li><button onclick="showSection('prompt')">Wyświetlanie okna do wpisania danych</button></li>
+        <li><button onclick="showSection('date')">Wyświetlanie/używanie godzin i kalendarza</button></li>
+      </ol>
+      <section class="syntax" style="display:none;"></section>
+      <section class="variable" style="display:none;"></section>
+      <section class="data" style="display:none;"></section>
+      <section class="if" style="display:none;"></section>
+      <section class="for" style="display:none;"></section>
+      <section class="function" style="display:none;"></section>
+      <section class="object" style="display:none;"></section>
+      <section class="getElement" style="display:none;"></section>
+      <section class="valid" style="display:none;"></section>
+      <section class="error" style="display:none;"></section>
+      <section class="innerHTML" style="display:none;"></section>
+      <section class="form" style="display:none;"></section>
+      <section class="button" style="display:none;"></section>
+      <section class="math" style="display:none;"></section>
+      <section class="dev" style="display:none;"></section>
+      <section class="prompt" style="display:none;"></section>
+      <section class="date" style="display:none;"></section>
      <script>
 function showSection(cls) {
   
