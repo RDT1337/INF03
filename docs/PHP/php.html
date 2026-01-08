@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Dział: PHP</title>
-    <link rel="stylesheet" href="docs/index_styling.css">
+    <link rel="stylesheet" href="../index_styling.css">
   </head>
   <body>
     <header>
@@ -19,13 +19,21 @@
 
       
         <ol>
-          <li>Połączenie do bazy</li>
-          <li>SELECT z bazy do strony HTML</li>
-          <li>INSTERT INTO z HTML do bazy</li>
-          <li>DELETE FROM z HTML do bazy</li>
-          <li>Wyświetlanie danych z formularza HTML w postaci tabeli</li>
-          <li>Odpięcie połączenia z bazą</li>
+          <li><button onclick="showSection('connect')">Połączenie do bazy</button></li>
+          <li><button onclick="showSection('select')">SELECT z bazy do strony HTML</button></li>
+          <li><button onclick="showSection('insert')">INSTERT INTO z HTML do bazy</button></li>
+          <li><button onclick="showSection('delete')">DELETE FROM z HTML do bazy</button></li>
+          <li><button onclick="showSection('tab-select')">Wyświetlanie danych z formularza HTML w postaci tabeli</button></li>
+          <li><button onclick="showSection('close')">Odpięcie połączenia z bazą</button></li>
+          <li><button onclick="showSection('tab-delete')">dodanie do tabeli z php guzika "usuń"</button></li>
         </ol>
+      <section class="connect" style="display: none;"></section>
+      <section class="select" style="display: none;"></section>
+      <section class="insert" style="display: none;"></section>
+      <section class="delete" style="display: none;"></section>
+      <section class="tab-select" style="display: none;"></section>
+      <section class="close" style="display: none;"></section>
+      <section class="tab-delete" style="display: none;"></section>
       <script>
 function showSection(cls) {
   
