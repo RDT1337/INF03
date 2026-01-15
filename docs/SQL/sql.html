@@ -18,7 +18,17 @@
         <li><button onclick="showSection('user')">tworzenie użytkowników</button></li>
         <li><button onclick="showSection('date')">używanie daty w zapytaniu</button></li>
       </ul>
-      <section class="join" style="display:none;"></section>
+      <section class="join" style="display:none;">
+        <h2>łączenie jedej bazy z drugą:</h2>
+        <pre><code>
+          JOIN druga_baza ON
+          druga_baza.klucz_obcy/główny = pierwsza_baza.klucz_obcy/główny
+        </code></pre>
+        <h2>łączenie baz nie połączonych bezpośrednio</h2>
+        <p>łączysz wtedy ze sobą te bazy idąc przez pośrednie bazy <br>
+        czyli: BAZA_START -> BAZA2 -> BAZA3 -> ... -> BAZA_DOCELOWA<br>
+        łączysz je za pomocą złączeń które mają ze sobą te poszczególne bazy</p>
+      </section>
       <section class="chain-join" style="display:none;"></section>
       <section class="view" style="display:none;"></section>
       <section class="update" style="display:none;"></section>
