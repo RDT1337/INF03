@@ -23,7 +23,7 @@
           <li><button onclick="showSection('select')">SELECT z bazy do strony HTML</button></li>
           <li><button onclick="showSection('insert')">INSTERT INTO z HTML do bazy</button></li>
           <li><button onclick="showSection('delete')">DELETE FROM z HTML do bazy</button></li>
-          <li><button onclick="showSection('tab-select')">Wyświetlanie danych z formularza HTML w postaci tabeli</button></li>
+          <li><button onclick="showSection('tab-select')">Wyświetlanie danych z formularza HTML</button></li>
           <li><button onclick="showSection('close')">Odpięcie połączenia z bazą</button></li>
           <li><button onclick="showSection('tab-delete')">dodanie do tabeli z php guzika "usuń"</button></li>
           <li><button onclick="showSection('date')">używanie godziny i kalendarza</button></li>
@@ -32,7 +32,25 @@
       <section class="select" style="display: none;"></section>
       <section class="insert" style="display: none;"></section>
       <section class="delete" style="display: none;"></section>
-      <section class="tab-select" style="display: none;"></section>
+      <section class="tab-select" style="display: none;">
+        <h1>Przykładowy form</h1>
+        <pre><code>
+          &lt;form action="plik_skryptu" method="POST lub GET"&gt;
+            &lt;input type="jaki_chcesz" name="name_komórki"&gt;
+            &lt;button type="submit"&gt;tekst_guzika&lt;/button&gt;
+          &lt;/form&gt;
+          &lt;?php
+            if(isset($_POST['name_komórki'])){
+              $zmienna_input = $_POST['name_komórki'];
+              $zapytanie = "SELECT kol_1 FROM tabela WHERE kol_1 = '$zmienna_input'";
+              $wynik_zapytania = $połączenie_db -> query($zapytanie);
+              while($wiersz_bazy = $wynik_zapytania -> fetch_assoc()){
+                echo $wiersz_bazy['kol_1'];
+              }
+            }
+          ?&gt;
+        </code></pre>
+      </section>
       <section class="close" style="display: none;"></section>
       <section class="tab-delete" style="display: none;"></section>
       <section class="date" style="display:none;"></section>
