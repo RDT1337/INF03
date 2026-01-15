@@ -4,6 +4,7 @@
 button{
   border-radius: 10px;           /* danie guzikom wygładzonych krawędzi */
   background-color: lightblue;
+  font-weight: bold;
 }
 .guziki {
     display: flex;              /* ułatwia układanie i centrowanie elementów w kontenerze */
