@@ -54,6 +54,22 @@
 
       <section class="sciezki" style="display: none;">
         <h1>PODPINANIE PLIKÓW PRZEZ ZNAJDOWANIE ŚCIEŻKI</h1>
+        <h3>Jeśli jest w tym samym katalogu:</h3>
+        <ul>
+          <li><code>&lt;link rel="stylesheet" href="NazwaPliku.css"&gt;</code></li>
+        </ul>
+        <h3>Jeśli jest w katalogu dalej:</h3>
+        <ull>
+          <li><code>&lt;link rel="stylesheet" href="./podfolder/NazwaPliku"</code>
+          <ul>
+            <li>Jedna kropka oznacza katalog, w którym się znajduje plik, do którego piszemy</li>
+          </ul></li>
+        </ull>
+        <h3>Jeśli plik jest ścieżke do tyłu:</h3>
+        <li><code>&lt;link rel="stylesheet" href="../NazwaPliku"</code>
+          <ul>
+            <li>Dwie kropki oznaczają cofanie o jeden folder</li>
+          </ul></li>
       </section>
 
       <section class="listy" style="display: none;">
