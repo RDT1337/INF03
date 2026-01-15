@@ -42,3 +42,6 @@ section ol{
   text-align: left;       /* ale tekst w środku wyrównany normalnie */
   padding-left: 40px;
 }
+pre{
+  text-align: initial;
+}
