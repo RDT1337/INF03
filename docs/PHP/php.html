@@ -76,23 +76,23 @@
           &lt;table border="1"&gt;
             &lt;tr&gt;
               &lt;th&gt;ID&lt;/th&gt;
-              &lt;th>Nazwisko&lt;/th&gt;
-              &lt;th>Imię&lt;/th&gt;
-              &lt;th>Kod koloru&lt;/th&gt;
-              &lt;th>Pojemność&lt;/th&gt;
-              &lt;th>Data odbioru&lt;/th&gt;
-              &lt;th>Akcja&lt;/th&gt;
+              &lt;th&gt;Nazwisko&lt;/th&gt;
+              &lt;th&gt;Imię&lt;/th&gt;
+              &lt;th&gt;Kod koloru&lt;/th&gt;
+              &lt;th&gt;Pojemność&lt;/th&gt;
+              &lt;th&gt;Data odbioru&lt;/th&gt;
+              &lt;th&gt;Akcja&lt;/th&gt;
             &lt;/tr&gt;
 
           if (isset($_POST['delete_id'])) {
             $id = (int)$_POST['delete_id'];
             $del_query = "DELETE FROM nazwa_bazy WHERE id = $id";
-            if($połączenie_do_bazy -> query($del_query)){
+            if($połączenie_do_bazy -&gt; query($del_query)){
               echo "usunięto";
             }
           }
           
-          while ($row = $result->fetch_assoc()) {
+          while ($row = $result-&gt;fetch_assoc()) {
             echo "&lt;tr&gt;".
               "&lt;td&gt;".$row['id']."&lt;/td&gt;".
               "&lt;td&gt;".$row['nazwisko']."&lt;/td&gt;".
