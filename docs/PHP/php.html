@@ -70,7 +70,49 @@
           ?&gt;
         </code></pre>
       </section>
-      <section class="tab-delete" style="display: none;"></section>
+      
+      <section class="tab-delete" style="display: none;">
+        <pre><code>
+          &lt;table border="1"&gt;
+            &lt;tr&gt;
+              &lt;th&gt;ID&lt;/th&gt;
+              &lt;th>Nazwisko&lt;/th&gt;
+              &lt;th>Imię&lt;/th&gt;
+              &lt;th>Kod koloru&lt;/th&gt;
+              &lt;th>Pojemność&lt;/th&gt;
+              &lt;th>Data odbioru&lt;/th&gt;
+              &lt;th>Akcja&lt;/th&gt;
+            &lt;/tr&gt;
+
+          if (isset($_POST['delete_id'])) {
+            $id = (int)$_POST['delete_id'];
+            $del_query = "DELETE FROM nazwa_bazy WHERE id = $id";
+            if($połączenie_do_bazy -> query($del_query)){
+              echo "usunięto";
+            }
+          }
+          
+          while ($row = $result->fetch_assoc()) {
+            echo "&lt;tr&gt;".
+              "&lt;td&gt;".$row['id']."&lt;/td&gt;".
+              "&lt;td&gt;".$row['nazwisko']."&lt;/td&gt;".
+              "&lt;td&gt;".$row['imie']."&lt;/td&gt;".
+              "&lt;td&gt;".$row['kod_koloru']."&lt;/td&gt;".
+              "&lt;td&gt;".$row['pojemnosc']."&lt;/td&gt;".
+              "&lt;td&gt;".$row['data_odbioru']."&lt;/td&gt;".
+              "&lt;td&gt;".
+              "&lt;form method='POST' style='margin:0'&gt;
+                &lt;input type='hidden' name='delete_id' value='".$row['id']."'&gt;".
+                "&lt;button type='submit'&gt;
+                    Usuń
+                &lt;/button&gt;
+              &lt;/form&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;";
+          }
+            &lt;/table&gt;
+        </code></pre>
+      </section>
       <section class="date" style="display:none;"></section>
       <script>
 function showSection(cls) {
